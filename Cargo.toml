@@ -1,0 +1,17 @@
+[package]
+name = "asus-rog-terminal-usb-device"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+int-enum = "1.1.2"
+log = { version = "0.4", optional = true }
+rgb = { version = "0.8", optional = true }
+ringbuffer = { version = "0.15.0", default-features = false }
+tinyvec = "1.8.1"
+usb-device = "0.3.2"
+usbd-hid = "0.8.2"
+
+[features]
+log = ["dep:log"]
+rgb-crate = ["dep:rgb"]
